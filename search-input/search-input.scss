@@ -1,0 +1,34 @@
+/*#search*/
+
+#search {
+    ul.dropdown-menu {
+        padding: 0;
+        li {
+            padding: 7px 0 !important;
+            margin-bottom: 0;
+            border-bottom: 1px solid #cdcece !important;
+            &:hover a .ajaxadvance .content,
+            &:hover a .ajaxadvance .content h4 {
+                color: #35a800;
+            }
+            a {
+                border: none;
+                .ajaxadvance {}
+            }
+        }
+        li[data-value="0"] {
+            a {
+                .ajaxadvance {
+                    text-align: center;
+                    min-height: 30px;
+                    .content {
+                        padding: 7px;
+                        .allresults {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
